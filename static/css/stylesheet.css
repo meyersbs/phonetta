@@ -1,0 +1,80 @@
+:root {
+    --RIT_BROWN:#513127;
+    --RIT_ORANGE:#F36E21;
+    --DARK_GREY:#333333;
+    --LIGHT_GREY:#E7E7E7;
+    --ATLAS_BLUE:#2196F3;
+    --ATLAS_DARK_BLUE:#004466;
+    --INK_ALCHEMY_PURPLE:#652D7E;
+}
+
+html,
+body {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font: bold 14px "Lucida Sans Unicode";
+    font-family: "Lucida Console", Monaco, monospace;
+    line-height: 100%;
+    background-color: var(--DARK_GREY);
+}
+
+nav {
+    font-family: "Charis SIL", "Gentium Plus", "Segoe UI", "Doulos SIL", "DejaVu Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial Unicode MS", sans-serif !important;
+    background-color: var(--ATLAS_BLUE) !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-default {
+    border: 0 !important;
+    color: white !important;
+}
+
+.navbar-fixed-top {
+    padding-right: 15px !important;
+}
+
+.navbar.navbar-default.navbar-fixed-bottom {
+    font-size: 10px;
+    min-height: 20px !important;
+    height: 20px !important;
+    padding-left: 15px !important;
+}
+
+.navbar.navbar-default.navbar-fixed-bottom > a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.navbar.navbar-default.navbar-fixed-bottom > a:hover {
+    color: var(--DARK_GREY) !important;
+    text-decoration: none;
+}
+
+.navbar-brand, .navbar-nav > li > a {
+    margin-left: 5px;
+    color: white !important;
+    border: 2px solid var(--ATLAS_BLUE);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.navbar-nav > li > a:hover {
+    margin-left: 5px;
+    color: var(--DARK_GREY) !important;
+    border: 2px solid var(--LIGHT_GREY);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    border: 2px solid var(--LIGHT_GREY);
+    border-radius: 8px;
+    background-color: var(--LIGHT_GREY) !important;
+    color: var(--DARK_GREY) !important;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: var(--LIGHT_GREY) !important;
+    color: var(--DARK_GREY) !important;
+}
