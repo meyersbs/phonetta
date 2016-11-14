@@ -2,7 +2,7 @@
 
 ?>
 
-<div class="row">
+<div class="row" style="padding-bottom: 5.5%;">
 	<div class="col-md-12">
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="navbar-header">
