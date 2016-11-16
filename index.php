@@ -15,15 +15,18 @@
 <div class="container-fluid" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
 	<?php include_once($root . "/static/includes/header.php"); ?>
 	<hr style='border: none; clear: both'>
-	<div class="row" style="position: relative;">
-		<div class="col-lg-4" style="width: 35% !important;">
-			<?php include_once($root . "/static/includes/keyboard.php"); ?>
-		</div>
-		<div class="col-lg-4" style="width: 30% !important;">
+	<div class="row" style="position: relative; max-width: 1400px;">
+		<div class="col-lg-6">
 			<textarea id="parchment" style="font-size: 20px; line-height: 1.25; letter-spacing: 1px;"></textarea>
 		</div>
-		<div class="col-lg-4" style="width: 30% !important;">
+		<div class="col-lg-6">
 
+		</div>
+	</div>
+	<hr style='border: none; clear: both'>
+	<div class="row" style="position: relative; max-width: 1400px;">
+		<div class="col-lg-12" style="width: 100% !important;">
+			<?php include_once($root . "/static/includes/keyboard.php"); ?>
 		</div>
 	</div>
 	<hr style='border: none; clear: both'>

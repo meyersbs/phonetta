@@ -14,13 +14,11 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#"><i class="fa fa-keyboard-o"></i>&nbsp;keyboard</a></li>
-					<li><a href="#"><i class="fa fa-keyboard-o"></i>&nbsp;consonants</a></li>
-					<li><a href="#"><i class="fa fa-keyboard-o"></i>&nbsp;vowels</a></li>
-					<li><a href="#"><i class="fa fa-keyboard-o"></i>&nbsp;diacritics</a></li>
+					<li><a href="#"><i class="fa fa-table"></i>&nbsp;charts</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><i class="fa fa-github"></i>&nbsp;GitHub</a></li>
-					<li><a href="mailto:ben@splat-library.org" target="_blank"><i class="fa fa-envelope"></i>&nbsp;Contact</a></li>
+					<li><a href="mailto:ben@phonetta.org" target="_blank"><i class="fa fa-envelope"></i>&nbsp;Contact</a></li>
 				</ul>
 			</div>
 		</nav>
