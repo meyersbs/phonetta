@@ -12,25 +12,21 @@
 </head>
 <body>
 <noscript>JavaScript is off. Please enable to view full site.</noscript>
-<div class="container-fluid" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
-	<?php include_once($root . "/static/includes/header.php"); ?>
-	<hr style='border: none; clear: both'>
-	<div class="row" style="position: relative; max-width: 1400px;">
-		<div class="col-lg-6">
-			<textarea id="parchment" style="font-size: 20px; line-height: 1.25; letter-spacing: 1px;"></textarea>
+<?php include_once($root . "/static/includes/header.php"); ?>
+<div class="container">
+	<div class="row">
+		<div class="col-md-5">
+			<div class="container">
+				<?php include_once($root . "/static/includes/keyboard.php"); ?>
+			</div>
 		</div>
-		<div class="col-lg-6">
-
+		<div class="col-md-3">
+			<textarea id="parchment"></textarea>
 		</div>
-	</div>
-	<hr style='border: none; clear: both'>
-	<div class="row" style="position: relative; max-width: 1400px;">
-		<div class="col-lg-12" style="width: 100% !important;">
-			<?php include_once($root . "/static/includes/keyboard.php"); ?>
+		<div class="col-md-4">
+			<h1>col-md-4</h1>
 		</div>
 	</div>
-	<hr style='border: none; clear: both'>
-	<?php include_once($root . "/static/includes/footer.php"); ?>
 </div>
 <script src='/static/js/scripts.js'></script>
 </body>
