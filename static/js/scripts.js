@@ -6,6 +6,18 @@ $('.keyboard-button').each(function(index, obj) {
     }, false);
 });
 
+/**** POPUPS **********************************************************************************************************/
+$('.keyboard-button').popover({
+    placement: 'auto',
+    container: 'body',
+    html: true,
+    trigger: 'hover',
+    template: '<div class="popover"><div class="popover-inner"><div class="popover-title"></div><div class="popover-content"><p></p></div></div></div>',
+    content: function () {
+        return $(this).next('.popover-content').html();
+    }
+});
+
 /**** KEYBOARD SHORTCUTS **********************************************************************************************/
 var listener = new window.keypress.Listener();
 
