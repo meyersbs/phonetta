@@ -81,6 +81,21 @@ nav {
     color: white !important;
 }
 
+
+.navbar-brand {
+    font-size: 14px !important;
+}
+
+a.navbar-brand {
+    color: white !important;
+    text-decoration: none;
+}
+
+a.navbar-brand:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
 .row {
     margin-right: 0 !important;
 }
@@ -109,24 +124,25 @@ nav {
 }
 
 .parchment-button {
-    margin: 1px;
+    margin: 5px 3px 3px;
     font-weight: bold;
-    width: 100%;
+    width: 47%;
     height: 40px !important;
     font-size: 16px;
     line-height: 100% !important;
     vertical-align: middle !important;
     border-radius: 20px;
+    border: 3px solid var(--LIGHT_GREY);
 }
 
 .parchment-button:hover {
-    margin: 1px;
+    margin: 5px 3px 3px;
     font-weight: bold;
-    width: 100%;
+    width: 47%;
     height: 40px !important;
     font-size: 16px;
     background-color: var(--INK_ALCHEMY_PURPLE);
-    border-color: var(--INK_ALCHEMY_PURPLE);
+    border: 3px solid var(--LIGHT_GREY);
     color: white;
     line-height: 100% !important;
     vertical-align: middle !important;
@@ -187,7 +203,8 @@ textarea {
 }
 
 .popover-content span {
-    font-size: 48px !important;
+    font: bold 48px "Lucida Sans Unicode";
+    font-family: "Lucida Console", Monaco, monospace;
     line-height: 35px !important;
 }
 

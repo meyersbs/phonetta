@@ -1,7 +1,10 @@
 <?php ?>
 <div class="row">
-	<div class="section-title">
+	<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 section-title pull-left">
 		consonants &amp; vowels
+	</div>
+	<div id="shortcut-toggle" title="click to toggle shortcuts on and off" class="col-xs-5 col-sm-5 col-md-5 col-lg-5 section-title pull-right" style="text-align: right !important;">
+		<i class="fa fa-check-circle"></i>&nbsp;shortcuts: <span style="color: lime">ON</span>
 	</div>
 </div>
 <div class="row">
@@ -40,142 +43,239 @@
 	<!-- D -->
 	<div id="d1" title="voiced alveolar plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x64;>&#x64;</div>
 	<div class="popover-content hide"><span>&#x64;</span><br><br>shortcut: alt+D<br>html: &amp;#x64;<br>UTF-16: 0x0064</div>
-	<div id="d2" title="voiced retroflex plosive [alt+DD]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x256;>&#x256;</div>
-	<div id="d3" title="voiced alveolar tap/flap [alt+DDD]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x27E;>&#x27E;</div>
-	<div id="d4" title="voiced dental fricative [alt+DDDD]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#xF0;>&#xF0;</div>
-	<div id="d5" title="voiced dental/alveolar implosive [alt+DDDDD]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x257;>&#x257;</div>
+	<div id="d2" title="voiced retroflex plosive " class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x256;>&#x256;</div>
+	<div class="popover-content hide"><span>&#x256;</span><br><br>shortcut: alt+DD<br>html: &amp;#x256;<br>UTF-16: 0x0256</div>
+	<div id="d3" title="voiced alveolar tap/flap" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x27E;>&#x27E;</div>
+	<div class="popover-content hide"><span>&#x27E;</span><br><br>shortcut: alt+DDD<br>html: &amp;#x27E;<br>UTF-16: 0x027E</div>
+	<div id="d4" title="voiced dental fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#xF0;>&#xF0;</div>
+	<div class="popover-content hide"><span>&#xF0;</span><br><br>shortcut: alt+DDDD<br>html: &amp;#xF0;<br>UTF-16: 0x00F0</div>
+	<div id="d5" title="voiced dental/alveolar implosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x257;>&#x257;</div>
+	<div class="popover-content hide"><span>&#x257;</span><br><br>shortcut: alt+DDDDD<br>html: &amp;#x257;<br>UTF-16: 0x0257</div>
 	<!-- E -->
-	<div id="e1" title="close-mid/high-mid front unrounded vowel [alt+E]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x65;>&#x65;</div>
-	<div id="e2" title="close-mid/high-mid central unrounded vowel [alt+EE]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x258;>&#x258;</div>
-	<div id="e3" title="mid central unrounded vowel [alt+EEE]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x259;>&#x259;</div>
-	<div id="e4" title="open-mid/low-mid front unrounded vowel [alt+EEEE]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25B;>&#x25B;</div>
+	<div id="e1" title="close-mid front unrounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x65;>&#x65;</div>
+	<div class="popover-content hide"><span>&#x65;</span><br><br>shortcut: alt+E<br>html: &amp;#x65;<br>UTF-16: 0x0065</div>
+	<div id="e2" title="close-mid central unrounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x258;>&#x258;</div>
+	<div class="popover-content hide"><span>&#x258;</span><br><br>shortcut: alt+EE<br>html: &amp;#x258;<br>UTF-16: 0x0258</div>
+	<div id="e3" title="mid central unrounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x259;>&#x259;</div>
+	<div class="popover-content hide"><span>&#x259;</span><br><br>shortcut: alt+EEE<br>html: &amp;#x259;<br>UTF-16: 0x0259</div>
+	<div id="e4" title="open-mid front unrounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25B;>&#x25B;</div>
+	<div class="popover-content hide"><span>&#x25B;</span><br><br>shortcut: alt+EEEE<br>html: &amp;#x25B;<br>UTF-16: 0x025B</div>
 </div>
 <!--			<div class="row"><div class="col-xs-12" style="height: 1px !important;"><br></div></div>-->
 <div class="row">
-	<div id="e5" title="open-mid/low-mid central unrounded vowel [alt+EEEEE]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25C;>&#x25C;</div>
-	<div id="e6" title="close-mid/high-mid front rounded vowel [alt+EEEEEE]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#xF8;>&#xF8;</div>
-	<div id="e7" title="open-mid/low-mid front rounded vowel [alt+EEEEEEE]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x153;>&#x153;</div>
-	<div id="e8" title="mid central unrounded rhotic vowel [alt+EEEEEEEE]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25A;>&#x25A;</div>
-	<div id="e9" title="open-mid/low-mid front unrounded rhotic vowel [alt+EEEEEEEEE]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25D;>&#x25D;</div>
+	<div id="e5" title="open-mid unrounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25C;>&#x25C;</div>
+	<div class="popover-content hide"><span>&#x25C;</span><br><br>shortcut: alt+EEEEE<br>html: &amp;#x25C;<br>UTF-16: 0x025C</div>
+	<div id="e6" title="close-mid front rounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#xF8;>&#xF8;</div>
+	<div class="popover-content hide"><span>&#xF8;</span><br><br>shortcut: alt+EEEEEE<br>html: &amp;#xF8;<br>UTF-16: 0x00F8</div>
+	<div id="e7" title="open-mid front rounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x153;>&#x153;</div>
+	<div class="popover-content hide"><span>&#x153;</span><br><br>shortcut: alt+EEEEEEE<br>html: &amp;#x153;<br>UTF-16: 0x0153</div>
+	<div id="e8" title="mid central unrounded rhotic vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25A;>&#x25A;</div>
+	<div class="popover-content hide"><span>&#x25A;</span><br><br>shortcut: alt+EEEEEEEE<br>html: &amp;#x25A;<br>UTF-16: 0x025A</div>
+	<div id="e9" title="open-mid front unrounded rhotic vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25D;>&#x25D;</div>
+	<div class="popover-content hide"><span>&#x25D;</span><br><br>shortcut: alt+EEEEEEEEE<br>html: &amp;#x25D;<br>UTF-16: 0x025D</div>
 	<!-- F -->
-	<div id="f1" title="voiceless labiodental fricative [alt+F]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x66;>&#x66;</div>
-	<div id="f2" title="voiced palatal implosive [alt+FF]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x284;>&#x284;</div>
-	<div id="f3" title="voiceless bilabial fricative [alt+FFF]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x278;>&#x278;</div>
+	<div id="f1" title="voiceless labiodental fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x66;>&#x66;</div>
+	<div class="popover-content hide"><span>&#x66;</span><br><br>shortcut: alt+F<br>html: &amp;#x66;<br>UTF-16: 0x0066</div>
+	<div id="f2" title="voiced palatal implosive " class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x284;>&#x284;</div>
+	<div class="popover-content hide"><span>&#x284;</span><br><br>shortcut: alt+FF<br>html: &amp;#x284;<br>UTF-16: 0x0284</div>
+	<div id="f3" title="voiceless bilabial fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x278;>&#x278;</div>
+	<div class="popover-content hide"><span>&#x278;</span><br><br>shortcut: alt+FFF<br>html: &amp;#x278;<br>UTF-16: 0x0278</div>
 	<!-- G -->
-	<div id="g1" title="voiced velar plosive [alt+G]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x67;>&#x67;</div>
-	<div id="g2" title="voiced uvular plosive [alt+GG]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x262;>&#x262;</div>
-	<div id="g3" title="voiced velar implosive [alt+GGG]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x260;>&#x260;</div>
+	<div id="g1" title="voiced velar plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x67;>&#x67;</div>
+	<div class="popover-content hide"><span>&#x67;</span><br><br>shortcut: alt+G<br>html: &amp;#x67;<br>UTF-16: 0x0067</div>
+	<div id="g2" title="voiced uvular plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x262;>&#x262;</div>
+	<div class="popover-content hide"><span>&#x262;</span><br><br>shortcut: alt+GG<br>html: &amp;#x262;<br>UTF-16: 0x0262</div>
+	<div id="g3" title="voiced velar implosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x260;>&#x260;</div>
+	<div class="popover-content hide"><span>&#x260;</span><br><br>shortcut: alt+GGG<br>html: &amp;#x260;<br>UTF-16: 0x0260</div>
 </div>
 <!--			<div class="row"><div class="col-xs-12" style="height: 1px !important;"><br></div></div>-->
 <div class="row">
-	<div id="g4" title="voiced uvular implosive [alt+GGGG]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x29B;>&#x29B;</div>
-	<div id="g5" title="voiceless glottal plosive [alt+GGGGG]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x294;>&#x294;</div>
+	<div id="g4" title="voiced uvular implosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x29B;>&#x29B;</div>
+	<div class="popover-content hide"><span>&#x29B;</span><br><br>shortcut: alt+GGGG<br>html: &amp;#x29B;<br>UTF-16: 0x029B</div>
+	<div id="g5" title="voiceless glottal plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x294;>&#x294;</div>
+	<div class="popover-content hide"><span>&#x294;</span><br><br>shortcut: alt+GGGGG<br>html: &amp;#x294;<br>UTF-16: 0x0294</div>
+	<div id="g6" title="alt. voiced velar plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x261;>&#x261;</div>
+	<div class="popover-content hide"><span>&#x261;</span><br><br>shortcut: alt+GGGGGG<br>html: &amp;#x261;<br>UTF-16: 0x0261</div>
 	<!-- H -->
-	<div id="h1" title="voiceless glottal fricative [alt+H]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x68;>&#x68;</div>
-	<div id="h2" title="voiced glottal fricative [alt+HH]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x266;>&#x266;</div>
-	<div id="h3" title="voiceless pharyngeal fricative [alt+HHH]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x127;>&#x127;</div>
-	<div id="h4" title="voiced pharyngeal fricative [alt+HHHH]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x295;>&#x295;</div>
-	<div id="h5" title="voiceless labial-palatal approximant [alt+HHHHH]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x265;>&#x265;</div>
-	<div id="h6" title="voiceless epiglottal fricative [alt+HHHHHH]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x29C;>&#x29C;</div>
-	<div id="h7" title="simultaneous [&#x283;] and [&#x78;]  [alt+HHHHHHH]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x267;>&#x267;</div>
+	<div id="h1" title="voiceless glottal fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x68;>&#x68;</div>
+	<div class="popover-content hide"><span>&#x68;</span><br><br>shortcut: alt+H<br>html: &amp;#x68;<br>UTF-16: 0x0068</div>
+	<div id="h2" title="voiced glottal fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x266;>&#x266;</div>
+	<div class="popover-content hide"><span>&#x266;</span><br><br>shortcut: alt+HH<br>html: &amp;#x266;<br>UTF-16: 0x0266</div>
+	<div id="h3" title="voiceless pharyngeal fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x127;>&#x127;</div>
+	<div class="popover-content hide"><span>&#x127;</span><br><br>shortcut: alt+HHH<br>html: &amp;#x127;<br>UTF-16: 0x0127</div>
+	<div id="h4" title="voiced pharyngeal fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x295;>&#x295;</div>
+	<div class="popover-content hide"><span>&#x295;</span><br><br>shortcut: alt+HHHH<br>html: &amp;#x295;<br>UTF-16: 0x0295</div>
+	<div id="h5" title="voiceless labial-palatal approximant" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x265;>&#x265;</div>
+	<div class="popover-content hide"><span>&#x265;</span><br><br>shortcut: alt+HHHHH<br>html: &amp;#x265;<br>UTF-16: 0x0265</div>
+	<div id="h6" title="voiceless epiglottal fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x29C;>&#x29C;</div>
+	<div class="popover-content hide"><span>&#x29C;</span><br><br>shortcut: alt+HHHHHH<br>html: &amp;#x29C;<br>UTF-16: 0x029C</div>
+	<div id="h7" title="simultaneous [&#x283;] and [&#x78;]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x267;>&#x267;</div>
+	<div class="popover-content hide"><span>&#x267;</span><br><br>shortcut: alt+HHHHHHH<br>html: &amp;#x267;<br>UTF-16: 0x0267</div>
 	<!-- I -->
-	<div id="i1" title="close/high front unrounded vowel [alt+I]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x69;>&#x69;</div>
-	<div id="i2" title="close/high central unrounded vowel [alt+II]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x268;>&#x268;</div>
+	<div id="i1" title="close front unrounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x69;>&#x69;</div>
+	<div class="popover-content hide"><span>&#x69;</span><br><br>shortcut: alt+I<br>html: &amp;#x69;<br>UTF-16: 0x0069</div>
 </div>
 <!--			<div class="row"><div class="col-xs-12" style="height: 1px !important;"><br></div></div>-->
 <div class="row">
-	<div id="i3" title="near-close/near-high near-front unrounded vowel [alt+III]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x26A;>&#x26A;</div>
-	<div id="i4" title="close/high front rounded vowel [alt+IIII]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x79;>&#x79;</div>
-	<div id="i5" title="near-close/near-high near-front rounded vowel [alt+IIIII]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28F;>&#x28F;</div>
+	<div id="i2" title="close central unrounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x268;>&#x268;</div>
+	<div class="popover-content hide"><span>&#x268;</span><br><br>shortcut: alt+II<br>html: &amp;#x268;<br>UTF-16: 0x0268</div>
+	<div id="i3" title="near-close near-front unrounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x26A;>&#x26A;</div>
+	<div class="popover-content hide"><span>&#x26A;</span><br><br>shortcut: alt+III<br>html: &amp;#x26A;<br>UTF-16: 0x026A</div>
+	<div id="i4" title="close front rounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x79;>&#x79;</div>
+	<div class="popover-content hide"><span>&#x79;</span><br><br>shortcut: alt+IIII<br>html: &amp;#x79;<br>UTF-16: 0x0079</div>
+	<div id="i5" title="near-close near-front rounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28F;>&#x28F;</div>
+	<div class="popover-content hide"><span>&#x28F;</span><br><br>shortcut: alt+IIIII<br>html: &amp;#x28F;<br>UTF-16: 0x028F</div>
 	<!-- J -->
-	<div id="j1" title="voiced palatal approximant [alt+J]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6A;>&#x6A;</div>
-	<div id="j2" title="voiced palatal plosive [alt+JJ]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25F;>&#x25F;</div>
-	<div id="j3" title="voiced palatal fricative [alt+JJJ]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x29D;>&#x29D;</div>
-	<div id="j4" title="voiced retroflex lateral approximant [alt+JJJJ]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x26D;>&#x26D;</div>
-	<div id="j5" title="voiced palatal lateral approximant [alt+JJJJJ]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28E;>&#x28E;</div>
+	<div id="j1" title="voiced palatal approximant" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6A;>&#x6A;</div>
+	<div class="popover-content hide"><span>&#x6A;</span><br><br>shortcut: alt+J<br>html: &amp;#x6A;<br>UTF-16: 0x006A</div>
+	<div id="j2" title="voiced palatal plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25F;>&#x25F;</div>
+	<div class="popover-content hide"><span>&#x25F;</span><br><br>shortcut: alt+JJ<br>html: &amp;#x25F;<br>UTF-16: 0x025F</div>
+	<div id="j3" title="voiced palatal fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x29D;>&#x29D;</div>
+	<div class="popover-content hide"><span>&#x29D;</span><br><br>shortcut: alt+JJJ<br>html: &amp;#x29D;<br>UTF-16: 0x029D</div>
+	<div id="j4" title="voiced retroflex lateral approximant" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x26D;>&#x26D;</div>
+	<div class="popover-content hide"><span>&#x26D;</span><br><br>shortcut: alt+JJJJ<br>html: &amp;#x26D;<br>UTF-16: 0x026D</div>
+	<div id="j5" title="voiced palatal lateral approximant" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28E;>&#x28E;</div>
+	<div class="popover-content hide"><span>&#x28E;</span><br><br>shortcut: alt+JJJJJ<br>html: &amp;#x28E;<br>UTF-16: 0x028E</div>
 	<!-- K -->
-	<div id="k1" title="voiceless velar plosive [alt+K]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6B;>&#x6B;</div>
-	<div id="k2" title="voiceless velar fricative [alt+KK]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x78;>&#x78;</div>
-	<div id="k3" title="voiced velar fricative [alt+KKK]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x263;>&#x263;</div>
+	<div id="k1" title="voiceless velar plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6B;>&#x6B;</div>
+	<div class="popover-content hide"><span>&#x6B;</span><br><br>shortcut: alt+K<br>html: &amp;#x6B;<br>UTF-16: 0x006B</div>
+	<div id="k2" title="voiceless velar fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x78;>&#x78;</div>
+	<div class="popover-content hide"><span>&#x78;</span><br><br>shortcut: alt+KK<br>html: &amp;#x78;<br>UTF-16: 0x0078</div>
 </div>
 <!--			<div class="row"><div class="col-xs-12" style="height: 1px !important;"><br></div></div>-->
 <div class="row">
-	<div id="k4" title="voiceless uvular fricative [alt+KKKK]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x3C7;>&#x3C7;</div>
+	<div id="k3" title="voiced velar fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x263;>&#x263;</div>
+	<div class="popover-content hide"><span>&#x263;</span><br><br>shortcut: alt+KKK<br>html: &amp;#x263;<br>UTF-16: 0x0263</div>
+	<div id="k4" title="voiceless uvular fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x3C7;>&#x3C7;</div>
+	<div class="popover-content hide"><span>&#x3C7;</span><br><br>shortcut: alt+KKKK<br>html: &amp;#x3C7;<br>UTF-16: 0x03C7</div>
 	<!-- L -->
-	<div id="l1" title="voiced alveolar lateral approximant [alt+L]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6C;>&#x6C;</div>
-	<div id="l2" title="voiceless alveolar lateral fricative [alt+LL]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x26C;>&#x26C;</div>
-	<div id="l3" title="voiced alveolar lateral fricative [alt+LLL]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x26E;>&#x26E;</div>
-	<div id="l4" title="voiced velar lateral approximant [alt+LLLL]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x29F;>&#x29F;</div>
+	<div id="l1" title="voiced alveolar lateral approximant" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6C;>&#x6C;</div>
+	<div class="popover-content hide"><span>&#x6C;</span><br><br>shortcut: alt+L<br>html: &amp;#x6C;<br>UTF-16: 0x006C</div>
+	<div id="l2" title="voiceless alveolar lateral fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x26C;>&#x26C;</div>
+	<div class="popover-content hide"><span>&#x26C;</span><br><br>shortcut: alt+LL<br>html: &amp;#x26C;<br>UTF-16: 0x026C</div>
+	<div id="l3" title="voiced alveolar lateral fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x26E;>&#x26E;</div>
+	<div class="popover-content hide"><span>&#x26E;</span><br><br>shortcut: alt+LLL<br>html: &amp;#x26E;<br>UTF-16: 0x026E</div>
+	<div id="l4" title="voiced velar lateral approximant" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x29F;>&#x29F;</div>
+	<div class="popover-content hide"><span>&#x29F;</span><br><br>shortcut: alt+LLLL<br>html: &amp;#x29F;<br>UTF-16: 0x029F</div>
 	<!-- M -->
-	<div id="m1" title="voiced bilabial nasal [alt+M]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6D;>&#x6D;</div>
-	<div id="m2" title="voiced labiodental nasal [alt+MM]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x271;>&#x271;</div>
-	<div id="m3" title="voiceless labial-velar fricative [alt+MMM]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28D;>&#x28D;</div>
+	<div id="m1" title="voiced bilabial nasal" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6D;>&#x6D;</div>
+	<div class="popover-content hide"><span>&#x6D;</span><br><br>shortcut: alt+M<br>html: &amp;#x6D;<br>UTF-16: 0x006D</div>
+	<div id="m2" title="voiced labiodental nasal" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x271;>&#x271;</div>
+	<div class="popover-content hide"><span>&#x271;</span><br><br>shortcut: alt+MM<br>html: &amp;#x271;<br>UTF-16: 0x0271</div>
+	<div id="m3" title="voiceless labial-velar fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28D;>&#x28D;</div>
+	<div class="popover-content hide"><span>&#x28D;</span><br><br>shortcut: alt+MMM<br>html: &amp;#x28D;<br>UTF-16: 0x028D</div>
 	<!-- N -->
-	<div id="n1" title="voiced alveolar nasal [alt+N]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6E;>&#x6E;</div>
-	<div id="n2" title="voiced retroflex nasal [alt+NN]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x273;>&#x273;</div>
-	<div id="n3" title="voiced palatal nasal [alt+NNN]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x272;>&#x272;</div>
+	<div id="n1" title="voiced alveolar nasal" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6E;>&#x6E;</div>
+	<div class="popover-content hide"><span>&#x6E;</span><br><br>shortcut: alt+N<br>html: &amp;#x6E;<br>UTF-16: 0x006E</div>
+	<div id="n2" title="voiced retroflex nasal" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x273;>&#x273;</div>
+	<div class="popover-content hide"><span>&#x273;</span><br><br>shortcut: alt+NN<br>html: &amp;#x273;<br>UTF-16: 0x0273</div>
 </div>
 <!--			<div class="row"><div class="col-xs-12" style="height: 1px !important;"><br></div></div>-->
 <div class="row">
-	<div id="n4" title="voiced velar nasal [alt+NNNN]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x14B;>&#x14B;</div>
-	<div id="n5" title="voiced uvular nasal [alt+NNNNN]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x274;>&#x274;</div>
+	<div id="n3" title="voiced palatal nasal" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x272;>&#x272;</div>
+	<div class="popover-content hide"><span>&#x272;</span><br><br>shortcut: alt+NNN<br>html: &amp;#x272;<br>UTF-16: 0x0272</div>
+	<div id="n4" title="voiced velar nasal" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x14B;>&#x14B;</div>
+	<div class="popover-content hide"><span>&#x14B;</span><br><br>shortcut: alt+NNNN<br>html: &amp;#x14B;<br>UTF-16: 0x014B</div>
+	<div id="n5" title="voiced uvular nasal" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x274;>&#x274;</div>
+	<div class="popover-content hide"><span>&#x274;</span><br><br>shortcut: alt+NNNNN<br>html: &amp;#x274;<br>UTF-16: 0x0274</div>
 	<!-- O -->
-	<div id="o1" title="close-mid/high-mid back rounded vowel [alt+O]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6F;>&#x6F;</div>
-	<div id="o2" title="open-mid/low-mid back rounded vowel [alt+OO]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x254;>&#x254;</div>
-	<div id="o3" title="open-mid/low-mid back unrounded vowel [alt+OOO]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28C;>&#x28C;</div>
-	<div id="o4" title="close-mid/high-mid central rounded vowel [alt+OOOO]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x275;>&#x275;</div>
-	<div id="o5" title="close-mid/high-mid back unrounded vowel [alt+OOOOO]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x264;>&#x264;</div>
-	<div id="o6" title="open-mid/low-mid central rounded vowel [alt+OOOOOO]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25E;>&#x25E;</div>
+	<div id="o1" title="close-mid back rounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x6F;>&#x6F;</div>
+	<div class="popover-content hide"><span>&#x6F;</span><br><br>shortcut: alt+O<br>html: &amp;#x6F;<br>UTF-16: 0x006F</div>
+	<div id="o2" title="open-mid back rounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x254;>&#x254;</div>
+	<div class="popover-content hide"><span>&#x254;</span><br><br>shortcut: alt+OO<br>html: &amp;#x254;<br>UTF-16: 0x0254</div>
+	<div id="o3" title="open-mid back unrounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28C;>&#x28C;</div>
+	<div class="popover-content hide"><span>&#x28C;</span><br><br>shortcut: alt+OOO<br>html: &amp;#x28C;<br>UTF-16: 0x028C</div>
+	<div id="o4" title="close-mid central rounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x275;>&#x275;</div>
+	<div class="popover-content hide"><span>&#x275;</span><br><br>shortcut: alt+OOOO<br>html: &amp;#x275;<br>UTF-16: 0x0275</div>
+	<div id="o5" title="close-mid back unrounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x264;>&#x264;</div>
+	<div class="popover-content hide"><span>&#x264;</span><br><br>shortcut: alt+OOOOO<br>html: &amp;#x264;<br>UTF-16: 0x0264</div>
+	<div id="o6" title="open-mid central rounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x25E;>&#x25E;</div>
+	<div class="popover-content hide"><span>&#x25E;</span><br><br>shortcut: alt+OOOOOO<br>html: &amp;#x25E;<br>UTF-16: 0x025E</div>
 	<!-- P -->
-	<div id="p1" title="voiceless bilabial plosive [alt+P]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x70;>&#x70;</div>
-	<div id="p2" title="voiceless uvular plosive [alt+PP]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x71;>&#x71;</div>
-	<div id="p3" title="voiced epiglottal fricative [alt+PPP]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x2A2;>&#x2A2;</div>
+	<div id="p1" title="voiceless bilabial plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x70;>&#x70;</div>
+	<div class="popover-content hide"><span>&#x70;</span><br><br>shortcut: alt+P<br>html: &amp;#x70;<br>UTF-16: 0x0070</div>
+	<div id="p2" title="voiceless uvular plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x71;>&#x71;</div>
+	<div class="popover-content hide"><span>&#x71;</span><br><br>shortcut: alt+PP<br>html: &amp;#x71;<br>UTF-16: 0x0071</div>
 </div>
 <!--			<div class="row"><div class="col-xs-12" style="height: 1px !important;"><br></div></div>-->
 <div class="row">
-	<div id="p4" title="epiglottal plosive [alt+PPPP]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x2A1;>&#x2A1;</div>
+	<div id="p3" title="voiced epiglottal fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x2A2;>&#x2A2;</div>
+	<div class="popover-content hide"><span>&#x2A2;</span><br><br>shortcut: alt+PPP<br>html: &amp;#x2A2;<br>UTF-16: 0x02A2</div>
+	<div id="p4" title="epiglottal plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x2A1;>&#x2A1;</div>
+	<div class="popover-content hide"><span>&#x2A1;</span><br><br>shortcut: alt+PPPP<br>html: &amp;#x2A1;<br>UTF-16: 0x02A1</div>
 	<!-- Q -->
-	<div id="click1" title="bilabial click [alt+Q]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x298;>&#x298;</div>
-	<div id="click2" title="dental click [alt+QQ]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x1C0;>&#x1C0;</div>
-	<div id="click3" title="(post)alveolar click [alt+QQQ]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x1C3;>&#x1C3;</div>
-	<div id="click4" title="palatoalveolar click [alt+QQQQ]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x1C2;>&#x1C2;</div>
-	<div id="click5" title="alveolar lateral click [alt+QQQQQ]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x1C1;>&#x1C1;</div>
+	<div id="click1" title="bilabial click" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x298;>&#x298;</div>
+	<div class="popover-content hide"><span>&#x298;</span><br><br>shortcut: alt+Q<br>html: &amp;#x298;<br>UTF-16: 0x0298</div>
+	<div id="click2" title="dental click" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x1C0;>&#x1C0;</div>
+	<div class="popover-content hide"><span>&#x1C0;</span><br><br>shortcut: alt+QQ<br>html: &amp;#x1C0;<br>UTF-16: 0x01C0</div>
+	<div id="click3" title="(post)alveolar click" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x1C3;>&#x1C3;</div>
+	<div class="popover-content hide"><span>&#x1C3;</span><br><br>shortcut: alt+QQQ<br>html: &amp;#x1C3;<br>UTF-16: 0x01C3</div>
+	<div id="click4" title="palatoalveolar click" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x1C2;>&#x1C2;</div>
+	<div class="popover-content hide"><span>&#x1C2;</span><br><br>shortcut: alt+QQQQ<br>html: &amp;#x1C2;<br>UTF-16: 0x01C2</div>
+	<div id="click5" title="alveolar lateral click" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x1C1;>&#x1C1;</div>
+	<div class="popover-content hide"><span>&#x1C1;</span><br><br>shortcut: alt+QQQQQ<br>html: &amp;#x1C1;<br>UTF-16: 0x01C1</div>
 	<!-- R -->
-	<div id="r1" title="voiced alveolar trill [alt+R]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x72;>&#x72;</div>
-	<div id="r2" title="voiced alveolar approximant [alt+RR]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x279;>&#x279;</div>
-	<div id="r3" title="voiced uvular trill [alt+RRR]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x280;>&#x280;</div>
-	<div id="r4" title="voiced uvular fricative [alt+RRRR]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x281;>&#x281;</div>
-	<div id="r5" title="voiced retroflex tap/flap [alt+RRRRR]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x27D;>&#x27D;</div>
+	<div id="r1" title="voiced alveolar trill" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x72;>&#x72;</div>
+	<div class="popover-content hide"><span>&#x72;</span><br><br>shortcut: alt+R<br>html: &amp;#x72;<br>UTF-16: 0x0072</div>
+	<div id="r2" title="voiced alveolar approximant" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x279;>&#x279;</div>
+	<div class="popover-content hide"><span>&#x279;</span><br><br>shortcut: alt+RR<br>html: &amp;#x279;<br>UTF-16: 0x0279</div>
+	<div id="r3" title="voiced uvular trill" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x280;>&#x280;</div>
+	<div class="popover-content hide"><span>&#x280;</span><br><br>shortcut: alt+RRR<br>html: &amp;#x280;<br>UTF-16: 0x0280</div>
+	<div id="r4" title="voiced uvular fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x281;>&#x281;</div>
+	<div class="popover-content hide"><span>&#x281;</span><br><br>shortcut: alt+RRRR<br>html: &amp;#x281;<br>UTF-16: 0x0281</div>
 </div>
 <!--			<div class="row"><div class="col-xs-12" style="height: 1px !important;"><br></div></div>-->
 <div class="row">
-	<div id="r6" title="voiced retroflex approximant [alt+RRRRRR]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x27B;>&#x27B;</div>
-	<div id="r7" title="alveolar lateral tap/flap [alt+RRRRRRR]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x27A;>&#x27A;</div>
+	<div id="r5" title="voiced retroflex tap/flap" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x27D;>&#x27D;</div>
+	<div class="popover-content hide"><span>&#x27D;</span><br><br>shortcut: alt+RRRRR<br>html: &amp;#x27D;<br>UTF-16: 0x027D</div>
+	<div id="r6" title="voiced retroflex approximant" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x27B;>&#x27B;</div>
+	<div class="popover-content hide"><span>&#x27B;</span><br><br>shortcut: alt+RRRRRR<br>html: &amp;#x27B;<br>UTF-16: 0x027B</div>
+	<div id="r7" title="alveolar lateral tap/flap" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x27A;>&#x27A;</div>
+	<div class="popover-content hide"><span>&#x27A;</span><br><br>shortcut: alt+RRRRRRR<br>html: &amp;#x27A;<br>UTF-16: 0x027A</div>
 	<!-- S -->
-	<div id="s1" title="voiceless alveolar fricative [alt+S]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x73;>&#x73;</div>
-	<div id="s2" title="voiceless postalveolar fricative [alt+SS]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x283;>&#x283;</div>
-	<div id="s3" title="voiceless retroflex fricative [alt+SSS]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x282;>&#x282;</div>
+	<div id="s1" title="voiceless alveolar fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x73;>&#x73;</div>
+	<div class="popover-content hide"><span>&#x73;</span><br><br>shortcut: alt+S<br>html: &amp;#x73;<br>UTF-16: 0x0073</div>
+	<div id="s2" title="voiceless postalveolar fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x283;>&#x283;</div>
+	<div class="popover-content hide"><span>&#x283;</span><br><br>shortcut: alt+SS<br>html: &amp;#x283;<br>UTF-16: 0x0283</div>
+	<div id="s3" title="voiceless retroflex fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x282;>&#x282;</div>
+	<div class="popover-content hide"><span>&#x282;</span><br><br>shortcut: alt+SSS<br>html: &amp;#x282;<br>UTF-16: 0x0282</div>
 	<!-- T -->
-	<div id="t1" title="voiceless alveolar plosive [alt+T]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x74;>&#x74;</div>
-	<div id="t2" title="voiceless retroflex plosive [alt+TT]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x288;>&#x288;</div>
-	<div id="t3" title="voiceless dental fricative [alt+TTT]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x3B8;>&#x3B8;</div>
+	<div id="t1" title="voiceless alveolar plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x74;>&#x74;</div>
+	<div class="popover-content hide"><span>&#x74;</span><br><br>shortcut: alt+T<br>html: &amp;#x74;<br>UTF-16: 0x0074</div>
+	<div id="t2" title="voiceless retroflex plosive" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x288;>&#x288;</div>
+	<div class="popover-content hide"><span>&#x288;</span><br><br>shortcut: alt+TT<br>html: &amp;#x288;<br>UTF-16: 0x0288</div>
+	<div id="t3" title="voiceless dental fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x3B8;>&#x3B8;</div>
+	<div class="popover-content hide"><span>&#x3B8;</span><br><br>shortcut: alt+TTT<br>html: &amp;#x3B8;<br>UTF-16: 0x03B8</div>
 	<!-- U -->
-	<div id="u1" title="close/high back rounded vowel [alt+U]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x75;>&#x75;</div>
-	<div id="u2" title="near-close/near-high near-back rounded vowel [alt+UU]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28A;>&#x28A;</div>
-	<div id="u3" title="close/high central rounded vowel [alt+UUU]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x289;>&#x289;</div>
+	<div id="u1" title="close back rounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x75;>&#x75;</div>
+	<div class="popover-content hide"><span>&#x75;</span><br><br>shortcut: alt+U<br>html: &amp;#x75;<br>UTF-16: 0x0075</div>
+	<div id="u2" title="near-close near-back rounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28A;>&#x28A;</div>
+	<div class="popover-content hide"><span>&#x28A;</span><br><br>shortcut: alt+UU<br>html: &amp;#x28A;<br>UTF-16: 0x028A</div>
 </div>
 <div class="row">
-	<div id="u4" title="close/high back unrounded vowel [alt+UUUU]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x26F;>&#x26F;</div>
+	<div id="u3" title="close central rounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x289;>&#x289;</div>
+	<div class="popover-content hide"><span>&#x289;</span><br><br>shortcut: alt+UUU<br>html: &amp;#x289;<br>UTF-16: 0x0289</div>
+	<div id="u4" title="close back unrounded vowel" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x26F;>&#x26F;</div>
+	<div class="popover-content hide"><span>&#x26F;</span><br><br>shortcut: alt+UUUU<br>html: &amp;#x26F;<br>UTF-16: 0x026F</div>
 	<!-- V -->
-	<div id="v1" title="voiced labiodental fricative [alt+V]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x76;>&#x76;</div>
-	<div id="v2" title="voiced labiodental tap/flap [alt+VV]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x2C71;>&#x2C71;</div>
+	<div id="v1" title="voiced labiodental fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x76;>&#x76;</div>
+	<div class="popover-content hide"><span>&#x76;</span><br><br>shortcut: alt+V<br>html: &amp;#x76;<br>UTF-16: 0x76</div>
+	<div id="v2" title="voiced labiodental tap/flap" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x2C71;>&#x2C71;</div>
+	<div class="popover-content hide"><span>&#x2C71;</span><br><br>shortcut: alt+VV<br>html: &amp;#x2C71;<br>UTF-16: 0x2C71</div>
 	<!-- W -->
-	<div id="w1" title="voiced labial-velar approximant [alt+W]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x77;>&#x77;</div>
-	<div id="w2" title="voiced labiodental approximant [alt+WW]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28B;>&#x28B;</div>
-	<div id="w3" title="voiced velar approximant [alt+WWW]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x270;>&#x270;</div>
+	<div id="w1" title="voiced labial-velar approximant" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x77;>&#x77;</div>
+	<div class="popover-content hide"><span>&#x77;</span><br><br>shortcut: alt+W<br>html: &amp;#x77;<br>UTF-16: 0x77</div>
+	<div id="w2" title="voiced labiodental approximant" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x28B;>&#x28B;</div>
+	<div class="popover-content hide"><span>&#x28B;</span><br><br>shortcut: alt+WW<br>html: &amp;#x28B;<br>UTF-16: 0x28B</div>
+	<div id="w3" title="voiced velar approximant" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x270;>&#x270;</div>
+	<div class="popover-content hide"><span>&#x270;</span><br><br>shortcut: alt+WWW<br>html: &amp;#x270;<br>UTF-16: 0x270</div>
 	<!-- Z -->
-	<div id="z1" title="voiced alveolar fricative [alt+Z]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x7A;>&#x7A;</div>
-	<div id="z2" title="voiced postalveolar fricative [alt+ZZ]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x292;>&#x292;</div>
-	<div id="z3" title="voiced retroflex fricative [alt+ZZZ]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x290;>&#x290;</div>
-	<div id="z4" title="voiced alveopalatal fricative [alt+ZZZZ]" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x291;>&#x291;</div>
+	<div id="z1" title="voiced alveolar fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x7A;>&#x7A;</div>
+	<div class="popover-content hide"><span>&#x7A;</span><br><br>shortcut: alt+Z<br>html: &amp;#x7A;<br>UTF-16: 0x7A</div>
+	<div id="z2" title="voiced postalveolar fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x292;>&#x292;</div>
+	<div class="popover-content hide"><span>&#x292;</span><br><br>shortcut: alt+ZZ<br>html: &amp;#x292;<br>UTF-16: 0x292</div>
+	<div id="z3" title="voiced retroflex fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x290;>&#x290;</div>
+	<div class="popover-content hide"><span>&#x290;</span><br><br>shortcut: alt+ZZZ<br>html: &amp;#x290;<br>UTF-16: 0x290</div>
+	<div id="z4" title="voiced alveopalatal fricative" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm keyboard-button" data-unicode=&#x291;>&#x291;</div>
+	<div class="popover-content hide"><span>&#x291;</span><br><br>shortcut: alt+ZZZZ<br>html: &amp;#x291;<br>UTF-16: 0x291</div>
 </div>
