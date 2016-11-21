@@ -14,6 +14,7 @@
 	<meta name="author" content="Benjamin S. Meyers">
 </head>
 <body>
+<?php include_once($root . "/static/includes/googleanalytics.php"); ?>
 <noscript>JavaScript is off. Please enable to view full site.</noscript>
 <?php include_once($root . "/static/includes/header.php"); ?>
 <div class="container" style="margin-top: 12px;">
