@@ -31,7 +31,16 @@
 			<div id="clear" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 btn btn-default well well-sm parchment-button pull-right" onclick="document.getElementById('parchment').value = '';">clear</div>
 		</div>
 		<div class="col-md-4">
-			<h1>col-md-4</h1>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section-title pull-left">
+					suprasegmentals &amp diacritics
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section-title pull-left">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coming soon!
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
