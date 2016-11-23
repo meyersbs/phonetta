@@ -12,15 +12,15 @@ html,
 body {
     height: 100%;
     -webkit-font-smoothing: antialiased;
-    font: bold 14px "Lucida Sans Unicode";
-    font-family: "Lucida Console", Monaco, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Charis SIL", "Gentium Plus", "Segoe UI", "Doulos SIL", "DejaVu Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial Unicode MS", sans-serif !important;
     line-height: 100%;
     background-color: var(--DARK_GREY);
     padding-top: 35px;
 }
 
 nav {
-    font-family: "Charis SIL", "Gentium Plus", "Segoe UI", "Doulos SIL", "DejaVu Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial Unicode MS", sans-serif !important;
     background-color: var(--ATLAS_BLUE) !important;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -33,6 +33,10 @@ nav {
 
 .navbar-fixed-top {
     padding-right: 15px !important;
+}
+
+.navbar-right {
+    margin-right: 25px !important;
 }
 
 .navbar.navbar-default.navbar-fixed-bottom {
@@ -100,6 +104,31 @@ a.navbar-brand:hover {
     margin-right: 0 !important;
 }
 
+.container {
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1300px !important;
+        margin-right: 50px !important;
+        margin-left: 50px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5 {
+        width: 36% !important;
+    }
+    .col-md-3 {
+        width: 30% !important;
+    }
+    .col-md-4 {
+        width: 34% !important;
+        padding-left: 0 !important;
+    }
+}
+
 .keyboard-button {
     margin: 1px;
     font-weight: bold;
@@ -116,6 +145,52 @@ a.navbar-brand:hover {
     width: 40px !important;
     height: 40px !important;
     font-size: 20px;
+    background-color: var(--ATLAS_BLUE);
+    border-color: var(--ATLAS_BLUE);
+    color: white;
+    line-height: 100% !important;
+    vertical-align: middle !important;
+}
+
+.keyboard-button-md {
+    margin: 1px;
+    font-weight: bold;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 24px;
+    line-height: 100% !important;
+    vertical-align: middle !important;
+}
+
+.keyboard-button-md:hover {
+    margin: 1px;
+    font-weight: bold;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 24px;
+    background-color: var(--ATLAS_BLUE);
+    border-color: var(--ATLAS_BLUE);
+    color: white;
+    line-height: 100% !important;
+    vertical-align: middle !important;
+}
+
+.keyboard-button-lg {
+    margin: 1px;
+    font-weight: bold;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 26px;
+    line-height: 100% !important;
+    vertical-align: middle !important;
+}
+
+.keyboard-button-lg:hover {
+    margin: 1px;
+    font-weight: bold;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 26px;
     background-color: var(--ATLAS_BLUE);
     border-color: var(--ATLAS_BLUE);
     color: white;
@@ -174,8 +249,9 @@ textarea {
     border-radius: 20px;
     background-color: var(--LIGHT_GREY);
     padding: 10px;
-    font-size: 16px;
-    line-height: 16px;
+    font-weight: normal !important;
+    font-size: 18px !important;
+    line-height: 18px !important;
 }
 
 /**** POPUPS **********************************************************************************************************/
@@ -191,6 +267,7 @@ textarea {
     background-color: var(--ATLAS_BLUE);
     color: white;
     border: 3px solid var(--ATLAS_BLUE);
+    text-align: center !important;
 }
 
 .popover-content {
@@ -203,9 +280,9 @@ textarea {
 }
 
 .popover-content span {
-    font: bold 48px "Lucida Sans Unicode";
-    font-family: "Lucida Console", Monaco, monospace;
-    line-height: 35px !important;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 45px !important;
 }
 
 /**** LINKS ***********************************************************************************************************/
