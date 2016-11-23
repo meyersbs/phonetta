@@ -1,5 +1,14 @@
+/**** WINDOW RESIZING *****/
+$(window).resize( function() {
+    var zoom = ( window.outerWidth - 10 ) / window.innerWidth;
+    if(zoom > 0.99 && zoom < 1.01) {}
+    else {
+        alert("This site has not be optimized for mobile browsers (or resizing in general). For best results, do not zoom in or out.");
+    }
+});
+
 /**** BUTTONS *********************************************************************************************************/
-$('.keyboard-button').each(function(index, obj) {
+$(".keyboard-button, .keyboard-button-md, .keyboard-button-lg").each(function(index, obj) {
     obj.addEventListener('click', function() {
         $("#parchment").val($("#parchment").val() + obj.getAttribute("data-unicode"));
         $("#parchment").focus();
@@ -28,7 +37,7 @@ $("#shortcut-toggle").each(function(index, obj) {
 });
 
 /**** POPUPS **********************************************************************************************************/
-$('.keyboard-button').popover({
+$(".keyboard-button, .keyboard-button-md, .keyboard-button-lg").popover({
     placement: 'auto', container: 'body', html: true, trigger: 'hover',
     template: '<div class="popover"><div class="popover-inner"><div class="popover-title"></div><div class="popover-content"><p></p></div></div></div>',
     content: function () { return $(this).next('.popover-content').html(); }
@@ -111,15 +120,14 @@ listener.counting_combo("alt f", function(e, count) {
 });
 /**** G-BASED *****/
 listener.counting_combo("alt g", function(e, count) {
-    if(count%6 == 1) {
+    if(count%5 == 1) {
         if(count != 1) { $("#parchment").val($("#parchment").val().slice(0, -1) + $("#g1").attr("data-unicode")); }
         else { $("#parchment").val($("#parchment").val() + $("#g1").attr("data-unicode")); }
     }
-    else if(count%6 == 2) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#g2").attr("data-unicode"));}
-    else if(count%6 == 3) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#g3").attr("data-unicode"));}
-    else if(count%6 == 4) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#g4").attr("data-unicode"));}
-    else if(count%6 == 5) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#g5").attr("data-unicode"));}
-    else if(count%6 == 0) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#g6").attr("data-unicode"));}
+    else if(count%5 == 2) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#g2").attr("data-unicode"));}
+    else if(count%5 == 3) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#g3").attr("data-unicode"));}
+    else if(count%5 == 4) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#g4").attr("data-unicode"));}
+    else if(count%5 == 0) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#g5").attr("data-unicode"));}
     $("#parchment").focus();
 });
 /**** H-BASED *****/
@@ -313,5 +321,72 @@ listener.counting_combo("alt q", function(e, count) {
     else if(count%5 == 3) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#click3").attr("data-unicode"));}
     else if(count%5 == 4) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#click4").attr("data-unicode"));}
     else if(count%5 == 0) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#click5").attr("data-unicode"));}
+    $("#parchment").focus();
+});
+/**** APOSTROPHE-BASED *****/
+listener.simple_combo("alt '", function() {
+    $("#parchment").val($("#parchment").val() + $("#ejct").attr("data-unicode"));
+});
+/**** UP-ARROW-BASED *****/
+listener.counting_combo("alt up", function(e, count) {
+    if(count%4 == 1) {
+        if(count != 1) { $("#parchment").val($("#parchment").val().slice(0, -1) + $("#arrow1").attr("data-unicode")); }
+        else { $("#parchment").val($("#parchment").val() + $("#arrow1").attr("data-unicode")); }
+    }
+    else if(count%4 == 2) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#arrow2").attr("data-unicode"));}
+    else if(count%4 == 3) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#arrow3").attr("data-unicode"));}
+    else if(count%4 == 0) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#arrow4").attr("data-unicode"));}
+    $("#parchment").focus();
+});
+/**** DOWN-ARROW-BASED *****/
+listener.counting_combo("alt down", function(e, count) {
+    if(count%11 == 1) {
+        if(count != 1) { $("#parchment").val($("#parchment").val().slice(0, -1) + $("#sup1").attr("data-unicode")); }
+        else { $("#parchment").val($("#parchment").val() + $("#sup1").attr("data-unicode")); }
+    }
+    else if(count%11 == 2) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#sup2").attr("data-unicode"));}
+    else if(count%11 == 3) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#sup3").attr("data-unicode"));}
+    else if(count%11 == 4) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#sup4").attr("data-unicode"));}
+    else if(count%11 == 5) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#sup5").attr("data-unicode"));}
+    else if(count%11 == 6) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#sup6").attr("data-unicode"));}
+    else if(count%11 == 7) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#sup7").attr("data-unicode"));}
+    else if(count%11 == 8) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#sup8").attr("data-unicode"));}
+    else if(count%11 == 9) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#sup9").attr("data-unicode"));}
+    else if(count%11 == 10) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#sup10").attr("data-unicode"));}
+    else if(count%11 == 0) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#sup11").attr("data-unicode"));}
+    $("#parchment").focus();
+});
+/**** RIGHT-ARROW-BASED *****/
+listener.counting_combo("alt right", function(e, count) {
+    if(count%10 == 1) {
+        if(count != 1) { $("#parchment").val($("#parchment").val().slice(0, -1) + $("#lev1").attr("data-unicode")); }
+        else { $("#parchment").val($("#parchment").val() + $("#lev1").attr("data-unicode")); }
+    }
+    else if(count%10 == 2) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#lev2").attr("data-unicode"));}
+    else if(count%10 == 3) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#lev3").attr("data-unicode"));}
+    else if(count%10 == 4) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#lev4").attr("data-unicode"));}
+    else if(count%10 == 5) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#lev5").attr("data-unicode"));}
+    else if(count%10 == 6) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#lev6").attr("data-unicode"));}
+    else if(count%10 == 7) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#lev7").attr("data-unicode"));}
+    else if(count%10 == 8) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#lev8").attr("data-unicode"));}
+    else if(count%10 == 9) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#lev9").attr("data-unicode"));}
+    else if(count%10 == 0) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#lev10").attr("data-unicode"));}
+    $("#parchment").focus();
+});
+/**** LEFT-ARROW-BASED *****/
+listener.counting_combo("alt left", function(e, count) {
+    if(count%10 == 1) {
+        if(count != 1) { $("#parchment").val($("#parchment").val().slice(0, -3) + $("#con1").attr("data-unicode")); }
+        else { $("#parchment").val($("#parchment").val() + $("#con1").attr("data-unicode")); }
+    }
+    else if(count%10 == 2) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#con2").attr("data-unicode"));}
+    else if(count%10 == 3) {$("#parchment").val($("#parchment").val().slice(0, -2) + $("#con3").attr("data-unicode"));}
+    else if(count%10 == 4) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#con4").attr("data-unicode"));}
+    else if(count%10 == 5) {$("#parchment").val($("#parchment").val().slice(0, -2) + $("#con5").attr("data-unicode"));}
+    else if(count%10 == 6) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#con6").attr("data-unicode"));}
+    else if(count%10 == 7) {$("#parchment").val($("#parchment").val().slice(0, -2) + $("#con7").attr("data-unicode"));}
+    else if(count%10 == 8) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#con8").attr("data-unicode"));}
+    else if(count%10 == 9) {$("#parchment").val($("#parchment").val().slice(0, -2) + $("#con9").attr("data-unicode"));}
+    else if(count%10 == 0) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#con10").attr("data-unicode"));}
     $("#parchment").focus();
 });
