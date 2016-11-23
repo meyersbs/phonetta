@@ -19,6 +19,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="https://github.com/meyersbs/phonetta" target="_blank"><i class="fa fa-github fa-2x" style="vertical-align: middle;"></i></a></li>
 				<li><a href="mailto:ben@phonetta.org" target="_blank"><i class="fa fa-envelope fa-2x" style="vertical-align: middle;"></i></a></li>
+				<li><a href="javascript:void()""><i class="fa fa-question-circle fa-2x" style="vertical-align: middle;"></i></a></li>
 			</ul>
 		</div>
 	</div>
