@@ -1,4 +1,4 @@
-/**** WINDOW RESIZING *****/
+/**** WINDOW RESIZING *************************************************************************************************/
 $(window).resize( function() {
     var zoom = ( window.outerWidth - 10 ) / window.innerWidth;
     if(zoom > 0.99 && zoom < 1.01) {}
@@ -6,6 +6,40 @@ $(window).resize( function() {
         alert("This site has not be optimized for mobile browsers (or resizing in general). For best results, do not zoom in or out.");
     }
 });
+
+/**** KEYBOARD LOGISTICS **********************************************************************************************/
+function getCursorStart() { return $('#parchment').prop("selectionStart"); }
+function getCursorEnd() { return $('#parchment').prop("selectionEnd"); }
+function getSelection() {
+    if(getCursorStart() == getCursorEnd()) {
+
+    } else {
+        return $('#parchment').prop("selectionStart");
+    }
+}
+function insertChar(char, offset, count) {
+    if(offset == null) { offset = 1; }
+    console.log(offset);
+    var t = $('#parchment');
+    var before = t.val().substring(0, t.prop("selectionStart"));
+    var goto = t.prop("selectionStart");
+    var selection = t.val().substring(goto, t.prop("selectionEnd"));
+    var after = t.val().substring(t.prop("selectionEnd"), t.val().length);
+    console.log(before);
+    console.log(t.val().substring(0, t.prop("selectionStart")));
+    console.log(selection);
+    console.log(after);
+    console.log(goto + Math.abs(offset));
+    if(offset != 1) {
+        t.val(before.slice(0, offset) + char + after);
+        goto = goto + Math.abs(offset) - count + (count -1);
+    } else {
+        t.val(before + char + after);
+        goto = goto + 1;
+    }
+    document.getElementById('parchment').selectionStart = goto;
+    document.getElementById('parchment').selectionEnd = goto;
+}
 
 /**** BUTTONS *********************************************************************************************************/
 $(".keyboard-button, .keyboard-button-md, .keyboard-button-lg").each(function(index, obj) {
@@ -46,18 +80,33 @@ $(".keyboard-button, .keyboard-button-md, .keyboard-button-lg").popover({
 /**** KEYBOARD SHORTCUTS **********************************************************************************************/
 var listener = new window.keypress.Listener();
 
+listener.simple_combo("ctrl i", function() {
+    insertChar('i', -1);
+});
+
 /**** A-BASED *****/
+// listener.counting_combo("alt a", function(e, count) {
+//     if(count%6 == 1) {
+//         if(count != 1) { $("#parchment").val($("#parchment").val().slice(0, -1) + $("#a1").attr("data-unicode")); }
+//         else { $("#parchment").val($("#parchment").val() + $("#a1").attr("data-unicode")); }
+//     }
+//     else if(count%6 == 2) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#a2").attr("data-unicode"));}
+//     else if(count%6 == 3) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#a3").attr("data-unicode"));}
+//     else if(count%6 == 4) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#a4").attr("data-unicode"));}
+//     else if(count%6 == 5) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#a5").attr("data-unicode"));}
+//     else if(count%6 == 0) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#a6").attr("data-unicode"));}
+//     $("#parchment").focus();
+// });
 listener.counting_combo("alt a", function(e, count) {
     if(count%6 == 1) {
-        if(count != 1) { $("#parchment").val($("#parchment").val().slice(0, -1) + $("#a1").attr("data-unicode")); }
-        else { $("#parchment").val($("#parchment").val() + $("#a1").attr("data-unicode")); }
+        if(count != 1) { insertChar($("#a1").attr("data-unicode"), -1, 1); }
+        else { insertChar($("#a1").attr("data-unicode"), 1, 1); }
     }
-    else if(count%6 == 2) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#a2").attr("data-unicode"));}
-    else if(count%6 == 3) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#a3").attr("data-unicode"));}
-    else if(count%6 == 4) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#a4").attr("data-unicode"));}
-    else if(count%6 == 5) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#a5").attr("data-unicode"));}
-    else if(count%6 == 0) {$("#parchment").val($("#parchment").val().slice(0, -1) + $("#a6").attr("data-unicode"));}
-    $("#parchment").focus();
+    else if(count%6 == 2) {insertChar($("#a2").attr("data-unicode"), -1, 2);}
+    else if(count%6 == 3) {insertChar($("#a3").attr("data-unicode"), -1, 3);}
+    else if(count%6 == 4) {insertChar($("#a4").attr("data-unicode"), -1, 4);}
+    else if(count%6 == 5) {insertChar($("#a5").attr("data-unicode"), -1, 5);}
+    else if(count%6 == 0) {insertChar($("#a6").attr("data-unicode"), -1, 6);}
 });
 /**** B-BASED *****/
 listener.counting_combo("alt b", function(e, count) {
