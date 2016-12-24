@@ -14,7 +14,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-weight: bold;
     font-size: 14px;
-    font-family: "Charis SIL", "Gentium Plus", "Segoe UI", "Doulos SIL", "DejaVu Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial Unicode MS", sans-serif !important;
+    <!--font-family: "Charis SIL", "Gentium Plus", "Segoe UI", "Doulos SIL", "DejaVu Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial Unicode MS", sans-serif !important;-->
     line-height: 100%;
     background-color: var(--DARK_GREY);
     padding-top: 35px;
