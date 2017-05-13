@@ -1,0 +1,105 @@
+* { box-sizing: border-box; }
+
+.ass {
+  flex: 4;
+}
+
+.keyboard-box {
+  padding: 0.5em 1.0em;
+  width: 36em;
+  float: right;
+}
+
+.parchment-box {
+  padding: 0.5em 1.0em;
+  flex: 5;
+}
+
+.meta-box {
+  padding: 0.5em 1.0em;
+  flex: 3;
+}
+
+.keyboard {
+  font-family: "Charis SIL", "Gentium Plus", "Segoe UI", "Doulos SIL", "DejaVu Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial Unicode MS", sans-serif !important;
+  border: black solid 0.0625em;
+  border-radius: 0.5em;
+  background: #666666;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.keyboard-row {
+  width: auto;
+  flex: 1;
+  display: flex;
+}
+
+.keyboard-row-empty {
+  width: auto;
+  flex 1;
+  display: flex;
+  height: 0.8em;
+  padding: 0.25em 0.375em 0.5em;
+}
+
+.key {
+  background: #444;
+  border: black solid 0.0625em;
+  border-radius: 0.4em;
+  height: 3em;
+  padding: 0.25em 0.375em 0.5em;
+}
+
+.key-pressed {  
+  background: #444;
+  border: #F36E21 solid 0.125em !important;
+  border-radius: 0.4em;
+  height: 3em;
+  padding: 0.25em 0.375em 0.5em;
+}
+
+.key-empty {
+  height: 1em;
+  padding: 0.25em 0.375em 0.5em;
+}
+
+.key:hover {
+  border: #2196F3 solid 0.125em !important;
+  border-radius: 0.4em;
+  height: 3em;
+  padding: 0.25em 0.375em 0.5em;
+}
+
+.key-1x { width: 3em; }
+
+.key-2x { width: 6em; }
+
+.key-3x { width: 9em; }
+
+.key-4x { width: 12em; }
+
+.key-5x { width: 15em; }
+
+.key-6x { width: 18em; }
+
+.key-flex { flex: 1; }
+
+.key > .cap {
+  background: #666;
+  border-radius: 0.25em;
+  height: 100%;
+  width: 100%;
+  padding: 0 0.125em;
+  text-align: center;
+  display: table;
+}
+
+.cap > span {
+  color: #EEE;
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 18px !important;
+}
+
