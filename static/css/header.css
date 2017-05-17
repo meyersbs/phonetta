@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "techniqu-brk";
+  src: url('../fonts/techniqu-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/techniqu-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/techniqu-webfont.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
 header {
 	background-color: #2196F3;
 	box-shadow: 0 1px 1px #ccc;
@@ -21,7 +28,8 @@ header {
 /* Logo */
 
 header > a {
-	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	/*font: normal 28px Cookie, Arial, Helvetica, sans-serif;*/
+        font-family: "techniqu-brk";
 	flex: 1;	
 }
 
