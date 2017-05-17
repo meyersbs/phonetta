@@ -45,12 +45,19 @@
 }
 
 .key {
-  background: #444;
   border: black solid 0.0625em;
   border-radius: 0.4em;
   height: 3em;
   padding: 0.25em 0.375em 0.5em;
 }
+
+.key-normal { background: #444; }
+.key-normal > .cap { background: #666; }
+
+.key-enabled { background: darkgreen; }
+.key-enabled > .cap { background: green; }
+.key-disabled { background: darkred; }
+.key-disabled > .cap { background: red; }
 
 .key-pressed {  
   background: #444;
@@ -86,8 +93,7 @@
 
 .key-flex { flex: 1; }
 
-.key > .cap {
-  background: #666;
+.cap {
   border-radius: 0.25em;
   height: 100%;
   width: 100%;

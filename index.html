@@ -25,9 +25,9 @@
     <div class="keyboard-row" id="keyboard-row-1"></div>
     <div class="keyboard-row" id="keyboard-row-2"></div>
     <div class="keyboard-row" id="keyboard-row-3">
-      <div class="key key-1x">
-        <div class="cap">
-       <span>A</span>
+            <div class="key key-normal key-1x">
+                <div class="cap">
+                    <span>A</span>
                 </div>
             </div>
             <div class="key key-1x">
@@ -549,9 +549,9 @@
                     <span>Modifiers</span>
                 </div>
             </div>
-            <div class="key key-5x">
+            <div class="key key-toggle key-enabled key-5x">
                 <div class="cap">
-                    <span>Disable Shortcuts</span>
+                    <span>Shortcuts Enabled</span>
                 </div>
             </div>
         </div>
@@ -637,10 +637,25 @@
       });
     }
 
-    $(".key").each(function() {
+    $(".key-normal").each(function() {
       $(this).on("click", function() {
         $(".key").removeClass("key-pressed");
         $(this).addClass("key-pressed");
+      });
+    });
+
+    $(".key-toggle").each(function() {
+      $(this).on("click", function() {
+        if($(this).hasClass("key-enabled")) {
+          $(this).html('<div class="cap"><span>Shortcuts Disabled</span></div>');
+          $(this).removeClass("key-enabled");
+          $(this).addClass("key-disabled");
+        }
+        else {
+          $(this).html('<div class="cap"><span>Shortcuts Enabled</span></div>');
+          $(this).removeClass("key-disabled");
+          $(this).addClass("key-enabled");
+        }
       });
     });
 
