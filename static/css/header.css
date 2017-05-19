@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "techniqu-brk";
-  src: url('../fonts/techniqu-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/techniqu-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/techniqu-webfont.ttf')  format('truetype') /* Safari, Android, iOS */
+  font-family: 'techniqu-brk';
+  src: url('fonts/techniqu-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/techniqu-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/techniqu-webfont.ttf')  format('truetype') /* Safari, Android, iOS */
 }
 
 header {
@@ -29,8 +29,11 @@ header {
 
 header > a {
 	/*font: normal 28px Cookie, Arial, Helvetica, sans-serif;*/
-        font-family: "techniqu-brk";
 	flex: 1;	
+}
+
+header > a > svg > text > tspan {
+        font-family: 'techniqu-brk' !important;
 }
 
 /* The navigation links */
@@ -121,14 +124,3 @@ body.fixed .header-fixed .header-limiter nav {
 
 }
 
-/*
-	 We are clearing the body's margin and padding, so that the header fits properly.
-	 We are also adding a height to demonstrate the scrolling behavior. You can remove
-	 these styles.
- */
-
-body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-}

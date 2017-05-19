@@ -1,13 +1,9 @@
-* { box-sizing: border-box; }
-
-.ass {
-  flex: 4;
-}
-
 .keyboard-box {
   padding: 0.5em 1.0em;
-  width: 36em;
+  min-width: 36em;
   float: right;
+  flex: 4;
+  height: 100% !important;
 }
 
 .parchment-box {
@@ -45,14 +41,27 @@
 }
 
 .key {
-  border: black solid 0.0625em;
+  border: #222 solid 0.125em;
   border-radius: 0.4em;
-  height: 3em;
+  /*height: 3em;*/
+  min-height: 3em;
   padding: 0.25em 0.375em 0.5em;
 }
 
-.key-normal { background: #444; }
+.key-normal { background: #444; height: auto; }
 .key-normal > .cap { background: #666; }
+
+.key-header { background: #444; height: 3em; }
+.key-header > .cap { background: #666; }
+
+.key-overlay { background: #444; height: 3em; }
+.key-overlay > .cap { background: #666; }
+.key-overlay:hover,
+.key-header:hover {
+  border: #F36E21 solid 0.125em !important;
+  border-radius: 0.4em;
+  padding: 0.25em 0.375em 0.5em;
+}
 
 .key-pressed {
   background: #222 !important;
@@ -60,9 +69,9 @@
 }
 .key-pressed > .cap { background: #444 !important; }
 
-.key-enabled { background: darkgreen; }
+.key-enabled { background: darkgreen; height: auto;}
 .key-enabled > .cap { background: green; }
-.key-disabled { background: darkred; }
+.key-disabled { background: darkred; height: auto;}
 .key-disabled > .cap { background: red; }
 
 .key-selected { background: #652D7E !important; }
@@ -80,10 +89,12 @@
   padding: 0.25em 0.375em 0.5em;
 }
 
-.key:hover {
+.key-normal:hover,
+.key-enabled:hover,
+.key-disabled:hover {
   border: #2196F3 solid 0.125em !important;
   border-radius: 0.4em;
-  height: 3em;
+  /*height: 3em;*/
   padding: 0.25em 0.375em 0.5em;
 }
 
@@ -99,7 +110,9 @@
 
 .key-6x { width: 18em; }
 
-.key-flex { flex: 1; }
+.key-flex-1x { flex: 1; }
+
+.key-flex-2x { flex: 2; }
 
 .cap {
   border-radius: 0.25em;
