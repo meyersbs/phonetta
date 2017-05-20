@@ -48,11 +48,21 @@
   padding: 0.25em 0.375em 0.5em;
 }
 
+.key-spacer {
+  min-height: 3em;
+  width: 3px;
+}
+
 .key-normal { background: #444; height: auto; }
 .key-normal > .cap { background: #666; }
 
 .key-header { background: #444; height: 3em; }
 .key-header > .cap { background: #666; }
+
+.key-table { background: #444; height: 3em; }
+.key-table > .cap-table { background: #666; }
+.key-2x > .cap-table > span { font-size: 11px !important; }
+.key-1x > .cap-table > span { font-size: 18px !important; }
 
 .key-overlay { background: #444; height: 3em; }
 .key-overlay > .cap { background: #666; }
@@ -100,6 +110,8 @@
 
 .key-1x { width: 3em; }
 
+.key-1-5x { width: 4.5em; }
+
 .key-2x { width: 6em; }
 
 .key-3x { width: 9em; }
@@ -110,11 +122,17 @@
 
 .key-6x { width: 18em; }
 
+.key-7x { width: 21em; }
+
+.key-8x { width: 24em; }
+
+.key-9x { width: 27em; }
+
 .key-flex-1x { flex: 1; }
 
 .key-flex-2x { flex: 2; }
 
-.cap {
+.cap, .cap-table {
   border-radius: 0.25em;
   height: 100%;
   width: 100%;
@@ -128,5 +146,11 @@
   vertical-align: middle;
   display: table-cell;
   font-size: 18px !important;
+}
+
+.cap-table > span {
+  color: #EEE;
+  vertical-align: middle;
+  display: table-cell;
 }
 
