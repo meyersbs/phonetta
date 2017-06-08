@@ -39,37 +39,6 @@ textarea {
     line-height: 16px !important;
 }
 
-/**** POPUPS **********************************************************************************************************/
-.popover {
-    border: 5px solid var(--ATLAS_BLUE);
-    border-radius: 5px;
-    background-color: var(--ATLAS_BLUE);
-}
-
-.popover-title {
-    font-weight: bold;
-    font-size: 12px !important;
-    background-color: var(--ATLAS_BLUE);
-    color: white;
-    border: 3px solid var(--ATLAS_BLUE);
-    text-align: center !important;
-}
-
-.popover-content {
-    font-weight: bold;
-    font-size: 12px !important;
-    text-align: center !important;
-    line-height: 20px !important;
-    background-color: white;
-    border-radius: 5px;
-}
-
-.popover-content span {
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 45px !important;
-}
-
 /**** LINKS ***********************************************************************************************************/
 a {
     color: white !important;

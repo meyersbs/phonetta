@@ -40,6 +40,12 @@
   padding: 0.25em 0.375em 0.5em;
 }
 
+.key-spacer {
+  width: 0.8em;
+  padding: 0.25em 0.375em 0.5em;
+  height: auto;
+}
+
 .key {
   border: #222 solid 0.125em;
   border-radius: 0.4em;
@@ -48,9 +54,25 @@
   padding: 0.25em 0.375em 0.5em;
 }
 
-.key-spacer {
-  min-height: 3em;
-  width: 3px;
+.key-vertical {
+  border: #222 solid 0.125em;
+  border-radius: 0.4em;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 24em !important;
+  padding: 0.25em 0.375em 0.5em;
+  width: 3em !important
+}
+
+.key-vertical > .cap-table {
+  width: 1.65em !important;
+  padding: 0 !important;
+}
+
+.key-vertical > .cap-table > span {
+  transform: rotate(270deg);
+  /*transform-origin: 14px;*/
+  padding-bottom: 3em;
 }
 
 .key-normal { background: #444; height: auto; }
