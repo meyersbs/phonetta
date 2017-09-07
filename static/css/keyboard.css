@@ -154,7 +154,7 @@
 
 .key-flex-2x { flex: 2; }
 
-.cap, .cap-table {
+.cap, .cap-table, .cap-info {
   border-radius: 0.25em;
   height: 100%;
   width: 100%;

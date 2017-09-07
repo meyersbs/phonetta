@@ -73,7 +73,7 @@
           <span>Diacritics</span>
         </div>
       </div>
-      <div class="key key-toggle key-enabled key-flex-2x">
+      <div class="key key-toggle key-enabled key-flex-2x" id="shortcuts">
         <div class="cap">
           <span>Shortcuts Enabled</span>
         </div>
@@ -103,9 +103,7 @@
 <div class="meta-box">
     <div class="keyboard" style="height: 100%;">
         <div class="keyboard-row">
-            <div class="key key-flex-1x">
-                <div class="cap"><span>Copy</span></div>
-            </div>
+            <div class="key key-flex-1x" id="info" style="text-align: center; background-color: var(--LIGHT_GREY);"></div>
         </div>
         <div class="keyboard-row">
             <div class="key key-flex-1x">
@@ -516,6 +514,16 @@
       $(this).on("click", function() {
         $(".key-normal").removeClass("key-pressed");
         $(this).addClass("key-pressed");
+        $("#parchment").val($("#parchment").val() + $(this).attr("data-unicode"));
+        var this_parent = $(this).prev();
+        $("#info").html(
+            '<span>' + this_parent.attr("data-title") + '</span>' +
+            '<br><span style="font-size: 60px;">' + this_parent.attr("data-unicode") + '</span>' +
+            '<br><span>HTML: &amp;' + this_parent.attr("data-html") + '</span>' +
+            '<br><span>UTF-16: ' + this_parent.attr("data-utf-16") + '</span>' +
+            '<br><span>Shortcut: ' + this_parent.attr("data-shortcut") + '</span>'
+        );
+        $("#parchment").focus();
       });
     });
 
@@ -525,11 +533,13 @@
           $(this).html('<div class="cap"><span>Shortcuts Disabled</span></div>');
           $(this).removeClass("key-enabled");
           $(this).addClass("key-disabled");
+          listener.stop_listening();
         }
         else {
           $(this).html('<div class="cap"><span>Shortcuts Enabled</span></div>');
           $(this).removeClass("key-disabled");
           $(this).addClass("key-enabled");
+          listener.listen();
         }
       });
     });
