@@ -52,7 +52,7 @@ header nav {
 header nav a{
 	text-decoration:none;
 	color: #ffffff;
-	opacity: 0.9;
+	/*opacity: 0.9;*/
 }
 
 .header-fixed .header-limiter nav a:hover{

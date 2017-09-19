@@ -510,7 +510,7 @@
       });
     }
 
-    $(".key-normal:not(#phonemes,#diacritics,#copy,#clear,#download)").each(function() {
+    $(".key-normal:not(#phonemes,#diacritics,#copy,#clear,#download,#audio)").each(function() {
       $(this).on("click", function() {
         $(".key-normal").removeClass("key-pressed");
         $(this).addClass("key-pressed");
@@ -521,7 +521,8 @@
             '<br><span style="font-size: 60px;">' + this_parent.attr("data-unicode") + '</span>' +
             '<br><span>HTML: &amp;' + this_parent.attr("data-html") + '</span>' +
             '<br><span>UTF-16: ' + this_parent.attr("data-utf-16") + '</span>' +
-            '<br><span>Shortcut: ' + this_parent.attr("data-shortcut") + '</span>'
+            '<br><span>Shortcut: ' + this_parent.attr("data-shortcut") + '</span>' +
+            '<br><br><audio controls style="width: 100%;"><source src=' + this_parent.attr("data-audio") + ' type="audio/ogg">Your browser does not support the audio element.</audio>'
         );
         $("#parchment").focus();
       });

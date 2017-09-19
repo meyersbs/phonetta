@@ -49,3 +49,7 @@ a:hover {
     color: var(--INK_ALCHEMY_PURPLE) !important;
     text-decoration: none;
 }
+
+.custom-audio {
+    background-color: var(--LIGHT_GREY) !important;
+}
