@@ -16,6 +16,10 @@
   flex: 3;
 }
 
+.meta-box > .keyboard > .keyboard-row > .key-flex-1x {
+  max-height: 3em;
+}
+
 .keyboard {
   font-family: "Charis SIL", "Gentium Plus", "Segoe UI", "Doulos SIL", "DejaVu Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial Unicode MS", sans-serif !important;
   border: black solid 0.0625em;
@@ -34,7 +38,7 @@
 
 .keyboard-row-empty {
   width: auto;
-  flex 1;
+  flex: 0;
   display: flex;
   height: 0.8em;
   padding: 0.25em 0.375em 0.5em;
@@ -153,6 +157,10 @@
 .key-flex-1x { flex: 1; }
 
 .key-flex-2x { flex: 2; }
+
+.key-flex-3x { flex: 3; }
+
+.key-flex-4x { flex: 4; }
 
 .cap, .cap-table, .cap-info {
   border-radius: 0.25em;
