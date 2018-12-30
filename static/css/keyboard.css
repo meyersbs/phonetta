@@ -82,6 +82,9 @@
 .key-normal { background: #444; height: auto; }
 .key-normal > .cap { background: #666; }
 
+.key-vowel { background: #666; height: auto; }
+.key-vowel > .cap { background: #888; }
+
 .key-header { background: #444; height: 3em; }
 .key-header > .cap { background: #666; }
 
