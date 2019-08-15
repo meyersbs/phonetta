@@ -1,0 +1,189 @@
+.keyboard-box {
+  padding: 0.5em 1.0em;
+  min-width: 36em;
+  float: right;
+  flex: 4;
+  height: 100% !important;
+}
+
+.parchment-box {
+  padding: 0.5em 1.0em;
+  flex: 5;
+}
+
+.meta-box {
+  padding: 0.5em 1.0em;
+  flex: 3;
+}
+
+.meta-box > .keyboard > .keyboard-row > .key-flex-1x {
+  max-height: 3em;
+}
+
+.keyboard {
+  font-family: "Charis SIL", "Gentium Plus", "Segoe UI", "Doulos SIL", "DejaVu Sans", "Lucida Sans Unicode", "Lucida Grande", "Arial Unicode MS", sans-serif !important;
+  border: black solid 0.0625em;
+  border-radius: 0.5em;
+  background: #666666;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.keyboard-row {
+  width: auto;
+  flex: 1;
+  display: flex;
+}
+
+.keyboard-row-empty {
+  width: auto;
+  flex: 0;
+  display: flex;
+  height: 0.8em;
+  padding: 0.25em 0.375em 0.5em;
+}
+
+.key-spacer {
+  width: 0.8em;
+  padding: 0.25em 0.375em 0.5em;
+  height: auto;
+}
+
+.key {
+  border: #222 solid 0.125em;
+  border-radius: 0.4em;
+  /*height: 3em;*/
+  min-height: 3em;
+  padding: 0.25em 0.375em 0.5em;
+}
+
+.key-vertical {
+  border: #222 solid 0.125em;
+  border-radius: 0.4em;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 24em !important;
+  padding: 0.25em 0.375em 0.5em;
+  width: 3em !important
+}
+
+.key-vertical > .cap-table {
+  width: 2em !important;
+  padding: 0 !important;
+}
+
+.key-vertical > .cap-table > span {
+  transform: rotate(270deg);
+  /*transform-origin: 14px;*/
+  padding-bottom: 3em;
+}
+
+.key-normal { background: #444; height: auto; }
+.key-normal > .cap { background: #666; }
+
+.key-vowel { background: #666; height: auto; }
+.key-vowel > .cap { background: #888; }
+
+.key-header { background: #444; height: 3em; }
+.key-header > .cap { background: #666; }
+
+.key-table { background: #444; height: 3em; }
+.key-table > .cap-table { background: #666; }
+.key-2x > .cap-table > span { font-size: 11px !important; }
+.key-1x > .cap-table > span { font-size: 18px !important; }
+
+.key-overlay { background: #444; height: 3em; }
+.key-overlay > .cap { background: #666; }
+.key-overlay:hover,
+.key-header:hover {
+  border: #F36E21 solid 0.125em !important;
+  border-radius: 0.4em;
+  padding: 0.25em 0.375em 0.5em;
+}
+
+.key-pressed {
+  background: #222 !important;
+  border: #F36E21 solid 0.125em !important;
+}
+.key-pressed > .cap { background: #444 !important; }
+
+.key-enabled { background: darkgreen; height: auto;}
+.key-enabled > .cap { background: green; }
+.key-disabled { background: darkred; height: auto;}
+.key-disabled > .cap { background: red; }
+
+.key-selected { background: #652D7E !important; }
+.key-selected > .cap { background: #9544bb !important; }
+
+/*.key-pressed {  
+  background: #444;
+  border-radius: 0.4em;
+  height: 3em;
+  padding: 0.25em 0.375em 0.5em;
+}*/
+
+.key-empty {
+  height: 1em;
+  padding: 0.25em 0.375em 0.5em;
+}
+
+.key-normal:hover,
+.key-enabled:hover,
+.key-disabled:hover {
+  border: #2196F3 solid 0.125em !important;
+  border-radius: 0.4em;
+  /*height: 3em;*/
+  padding: 0.25em 0.375em 0.5em;
+}
+
+.key-1x { width: 3em; }
+
+.key-1-5x { width: 4.5em; }
+
+.key-2x { width: 6em; }
+
+.key-3x { width: 9em; }
+
+.key-4x { width: 12em; }
+
+.key-5x { width: 15em; }
+
+.key-6x { width: 18em; }
+
+.key-7x { width: 21em; }
+
+.key-8x { width: 24em; }
+
+.key-9x { width: 27em; }
+
+.key-flex-1x { flex: 1; }
+
+.key-flex-2x { flex: 2; }
+
+.key-flex-3x { flex: 3; }
+
+.key-flex-4x { flex: 4; }
+
+.cap, .cap-table, .cap-info {
+  border-radius: 0.25em;
+  height: 100%;
+  width: 100%;
+  padding: 0 0.125em;
+  text-align: center;
+  display: table;
+}
+
+.cap > span {
+  color: #EEE;
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 18px !important;
+}
+
+.cap-table > span {
+  color: #EEE;
+  vertical-align: middle;
+  display: table-cell;
+}
+

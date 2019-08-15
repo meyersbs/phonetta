@@ -1,0 +1,30 @@
+.tcon {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+.tcon td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+}
+.tcon th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break:normal;
+}
+.tcon .tcon-s6z2{text-align:center}
+.tcon .tcon-yw4l{vertical-align:top}
+.tcon .tcon-hgcj{font-weight:bold;text-align:center}
+.tcon .tcon-34fq{font-weight:bold;text-align:right}
+.tcon .tcon-l2oz{font-weight:bold;text-align:right;vertical-align:top}

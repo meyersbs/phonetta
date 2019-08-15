@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'techniqu-brk';
+  src: url('fonts/techniqu-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/techniqu-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/techniqu-webfont.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+header {
+	background-color: #2196F3;
+	box-shadow: 0 1px 1px #ccc;
+        padding: 0.5em 0.5em 0.5em 1.0em;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+	-webkit-transition: top 0.3s;
+	transition: top 0.3s;
+        display: flex;
+}
+
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+	browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+/* Logo */
+
+header > a {
+	/*font: normal 28px Cookie, Arial, Helvetica, sans-serif;*/
+	flex: 1;	
+}
+
+header > a > svg > text > tspan {
+        font-family: 'techniqu-brk' !important;
+}
+
+/* The navigation links */
+
+header a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+header nav {
+	flex: 1;
+        padding-top: 13px;
+        text-align: right;
+}
+
+header nav a{
+	text-decoration:none;
+	color: #ffffff;
+	/*opacity: 0.9;*/
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+}
+
