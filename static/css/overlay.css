@@ -9,6 +9,7 @@
 
 .overlay-help { background: rgba(33,150,243,0.4); }
 .overlay-chart { background: rgba(33,150,243,0.8); }
+.overlay-chart-vowels { background: rgba(33,150,243,0.8); }
 
 /* Overlay closing cross */
 .overlay .overlay-close-chart {
