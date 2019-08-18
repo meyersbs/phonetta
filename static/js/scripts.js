@@ -12,7 +12,7 @@ function getCursorStart() { return $('#parchment').prop("selectionStart"); }
 function getCursorEnd() { return $('#parchment').prop("selectionEnd"); }
 function getSelection() {
     if(getCursorStart() == getCursorEnd()) {
-
+        return getCursorEnd();
     } else {
         return $('#parchment').prop("selectionStart");
     }
